@@ -10,10 +10,10 @@ node {
     // imageName = "${registryHost}${appName}:${tag}"
 
     stage("test") {
-        echo "testing"
+        sh "docker build -t app:v1 ."
     }
 
     stage("build") {
-        sh "ls -la"
+        sh "kubectl create -f kubeteste.yaml"
     }
 }
