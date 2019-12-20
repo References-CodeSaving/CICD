@@ -9,15 +9,10 @@ node {
     // registryHost = "127.0.0.1:30400/"
     // imageName = "${registryHost}${appName}:${tag}"
 
-    stage("test") {
-        steps {
-            echo "testing"
-        }
-    }
+    stage "test"
+    
+        echo "testing"
 
-    stage("build") {
-        steps {
-            sh "ls -la"
-        }
-    }
-}
+    stage "build"
+
+        sh "ls -la"
