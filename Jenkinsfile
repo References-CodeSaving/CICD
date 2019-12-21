@@ -14,6 +14,6 @@ node {
     }
 
     stage("build") {
-        sh "kubectl create -f testando.yaml"
+        sh "kubectl create -f kubeteste.yaml"
     }
 }
