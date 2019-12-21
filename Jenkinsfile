@@ -14,7 +14,7 @@ node {
     }
 
     stage("build") {
-        sh "kubectl run app --image app:v1 --port 3030"
+        sh "kubectl run app --image nginx"
         sh "kubectl expose deployment app --type LoadBalancer"
     }
 }
