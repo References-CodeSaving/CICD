@@ -15,6 +15,7 @@ node {
 
     stage("build") {
         sh "kubectl get nodes"
+        echo "$PATH"
         //sh "kubectl run app --image nginx"
         //sh "kubectl expose deployment app --type LoadBalancer"
     }
