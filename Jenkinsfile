@@ -14,7 +14,6 @@ node {
     }
 
     stage("build") {
-        sh "strace kubectl version"
         sh "kubectl get nodes"
         //sh "kubectl run app --image nginx"
         //sh "kubectl expose deployment app --type LoadBalancer"
