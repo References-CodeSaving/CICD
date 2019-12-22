@@ -14,8 +14,8 @@ node {
     }
 
     stage("build") {
-        echo "$PATH"
-        sh "kubectl get nodes"
+        sh "kubectl create -f kubeteste.yaml"
+        //sh "kubectl get nodes"
         //sh "kubectl run app --image nginx"
         //sh "kubectl expose deployment app --type LoadBalancer"
     }
