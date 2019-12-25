@@ -16,7 +16,8 @@ node {
     stage("build") {
         //sh "kubectl create -f kubeteste.yaml"
         //sh "kubectl get nodes"
-        sh "kubectl run app --image app --port 3030"
-        sh "kubectl expose deployment app --type LoadBalancer"
+        //sh "kubectl run app --image app --port 3030"
+        //sh "kubectl expose deployment app --type LoadBalancer"
+        sh "kubectl create -f testando.yaml"
     }
 }
